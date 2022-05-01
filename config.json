@@ -1,0 +1,11 @@
+{
+"browserUserConfig": {
+    "hideBrowserGUI": false,
+    "getSiteAfterRun": "http://reverseturntable.eu.pythonanywhere.com/"
+}, 
+"botUserConfig": {
+    "timeFormat": "%Y-%m-%d %H:%M:%S",
+    "saveLogs": true,
+    "logsDirectory": "logbooks"
+        }
+    }
