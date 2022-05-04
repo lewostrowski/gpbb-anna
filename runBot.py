@@ -68,6 +68,3 @@ driver = startBrowser(browserUserConfig)
 if browserUserConfig.get('getSiteAfterRun') != False: 
     driver.get(browserUserConfig.get('getSiteAfterRun'))
     logBook(sessionID, 'open site', browserUserConfig.get('getSiteAfterRun'), botUserConfig)
-
-    driver.get(browserUserConfig.get('getSiteAfterRun'))
-    logBook(sessionID, 'open site', browserUserConfig.get('getSiteAfterRun'), botUserConfig)
