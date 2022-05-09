@@ -48,6 +48,30 @@ def logBook(sessionID, actionDescription, target, config, consolLog=True):
         logBook.write(f'{sessionID}, {currentDate}, {actionDescription}, {target}'  + '\n')
         logBook.close()
 
+# Wait for user action
+def userAction(inputMessage, keyToRun):
+    print('')
+    print('--------Waiting for user action-------')
+    confirm = input(inputMessage)
+
+    while confirm != keyToRun:
+        wait(1)
+
+    print('-----------End of user action---------')
+    print('')
+
+# Test XPATH while runing bot
+def XPATHtestInRun():
+    x = False
+    while x == False:
+        path = input('Provide XPATH to click: ')
+        if path == 'end':
+            x = True
+        else:
+            try:
+                driver.find_element(By.XPATH, path).click()
+            except:
+
 #BOT BODY
 
 ##Import config file
